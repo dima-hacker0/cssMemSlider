@@ -21,6 +21,7 @@ footer {
 }
 main {
     padding: 0 20px;
+    overflow: hidden;
 }
 .slider-buttom {
     background-color: yellow;
@@ -56,6 +57,7 @@ p {
     color: white;
     font-size: 32px;
     margin: 0;
+    transition: 1s;
 }
 @media(min-width: 1024px) {
     .flex-buttons {

@@ -1,7 +1,9 @@
 const img = document.querySelector('#img');
-let currenrSlide = 1;
+let currentSlide = 1;
 
 const allImages = document.querySelectorAll('.slider-buttom');
+
+const text = document.querySelector('#text');
 
 document.querySelector('#button-1').addEventListener('click', function() {
     for(let i = 0; i < 4; i++) {
@@ -9,9 +11,19 @@ document.querySelector('#button-1').addEventListener('click', function() {
             allImages[i].classList.remove('current-button');
         }
     }
-    document.querySelector('#text').innerHTML = 'something is wrong here';
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem1.2.jpg)';
     document.querySelector('#button-1').classList.add('current-button');
+    if(currentSlide != 1) {
+        text.style.transform = `translateX(-80%)`;
+        setTimeout(function() {
+            document.querySelector('#text').innerHTML = 'something is wrong here';
+            text.style.transition = '0s'
+            text.style.transform = `translateX(-80%)`;
+            text.style.transition = '1s'
+            text.style.transform = `translateX(0%)`;
+        }, 1000);
+    }
+    currentSlide = 1;
 });
 
 document.querySelector('#button-2').addEventListener('click', function() {
@@ -22,7 +34,17 @@ document.querySelector('#button-2').addEventListener('click', function() {
     }
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem2.jpg)';
     document.querySelector('#button-2').classList.add('current-button');
-    document.querySelector('#text').innerHTML = 'Кто-то здесь сказал слово "семья"?';
+    if(currentSlide != 2) {
+        text.style.transform = `translateX(-80%)`;
+        setTimeout(function() {
+            document.querySelector('#text').innerHTML = 'Кто-то здесь сказал слово "семья"?';
+            text.style.transition = '0s'
+            text.style.transform = `translateX(-80%)`;
+            text.style.transition = '1s'
+            text.style.transform = `translateX(0%)`;
+        }, 1000);
+    }
+    currentSlide = 2;
 });
 
 document.querySelector('#button-3').addEventListener('click', function() {
@@ -31,9 +53,19 @@ document.querySelector('#button-3').addEventListener('click', function() {
             allImages[i].classList.remove('current-button');
         }
     }
-    document.querySelector('#text').innerHTML = "you can't just write code without errors";
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem3.jpg)';
     document.querySelector('#button-3').classList.add('current-button');
+    if(currentSlide != 3) {
+        text.style.transform = `translateX(-80%)`;
+        setTimeout(function() {
+            document.querySelector('#text').innerHTML = "you can't just write code without errors";
+            text.style.transition = '0s'
+            text.style.transform = `translateX(-80%)`;
+            text.style.transition = '1s'
+            text.style.transform = `translateX(0%)`;
+        }, 1000);
+    }
+    currentSlide = 3;
 });
 
 document.querySelector('#button-4').addEventListener('click', function() {
@@ -42,8 +74,18 @@ document.querySelector('#button-4').addEventListener('click', function() {
             allImages[i].classList.remove('current-button');
         }
     }
-    document.querySelector('#text').innerHTML = 'when I got the maximum score on croos-check';
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem4.jpg)';
     document.querySelector('#button-4').classList.add('current-button');
+    if(currentSlide != 4) {
+        text.style.transform = `translateX(-80%)`;
+        setTimeout(function() {
+            document.querySelector('#text').innerHTML = 'when I got the maximum score on croos-check';
+            text.style.transition = '0s'
+            text.style.transform = `translateX(-80%)`;
+            text.style.transition = '1s'
+            text.style.transform = `translateX(0%)`;
+        }, 1000);
+    }
+    currentSlide = 4;
 });
 
