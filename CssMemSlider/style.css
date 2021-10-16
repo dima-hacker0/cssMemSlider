@@ -63,10 +63,12 @@ p {
     .flex-buttons {
         display: flex;
         justify-content: space-between;
+        flex-flow: row-reverse;
     }
+
 }
 @media(max-width: 500px) {
     #text {
         font-size: 25px;
     }
-}
+} 

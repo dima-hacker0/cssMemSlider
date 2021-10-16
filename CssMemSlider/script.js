@@ -14,12 +14,9 @@ document.querySelector('#button-1').addEventListener('click', function() {
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem1.2.jpg)';
     document.querySelector('#button-1').classList.add('current-button');
     if(currentSlide != 1) {
-        text.style.transform = `translateX(-80%)`;
+        text.style.transform = `translateX(-110%)`;
         setTimeout(function() {
             document.querySelector('#text').innerHTML = 'something is wrong here';
-            text.style.transition = '0s'
-            text.style.transform = `translateX(-80%)`;
-            text.style.transition = '1s'
             text.style.transform = `translateX(0%)`;
         }, 1000);
     }
@@ -35,12 +32,9 @@ document.querySelector('#button-2').addEventListener('click', function() {
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem2.jpg)';
     document.querySelector('#button-2').classList.add('current-button');
     if(currentSlide != 2) {
-        text.style.transform = `translateX(-80%)`;
+        text.style.transform = `translateX(-110%)`;
         setTimeout(function() {
             document.querySelector('#text').innerHTML = 'Кто-то здесь сказал слово "семья"?';
-            text.style.transition = '0s'
-            text.style.transform = `translateX(-80%)`;
-            text.style.transition = '1s'
             text.style.transform = `translateX(0%)`;
         }, 1000);
     }
@@ -56,12 +50,10 @@ document.querySelector('#button-3').addEventListener('click', function() {
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem3.jpg)';
     document.querySelector('#button-3').classList.add('current-button');
     if(currentSlide != 3) {
-        text.style.transform = `translateX(-80%)`;
+        text.style.transform = `translateX(-110%)`;
         setTimeout(function() {
             document.querySelector('#text').innerHTML = "you can't just write code without errors";
-            text.style.transition = '0s'
-            text.style.transform = `translateX(-80%)`;
-            text.style.transition = '1s'
+
             text.style.transform = `translateX(0%)`;
         }, 1000);
     }
@@ -77,12 +69,9 @@ document.querySelector('#button-4').addEventListener('click', function() {
     document.querySelector('.img-div').style.backgroundImage = 'url(photos/mem4.jpg)';
     document.querySelector('#button-4').classList.add('current-button');
     if(currentSlide != 4) {
-        text.style.transform = `translateX(-80%)`;
+        text.style.transform = `translateX(-110%)`;
         setTimeout(function() {
             document.querySelector('#text').innerHTML = 'when I got the maximum score on croos-check';
-            text.style.transition = '0s'
-            text.style.transform = `translateX(-80%)`;
-            text.style.transition = '1s'
             text.style.transform = `translateX(0%)`;
         }, 1000);
     }
