@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    padding: 20px;
+}
+.img-div {
+    height: 43vw;
+    width: 100%;
+    transition: 0.5s;
+    background-image: url(photos/mem1.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+main {
+    padding: 0 20px;
+}
+.slider-buttom {
+    background-color: yellow;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 11px;
+    transition: 0.3s;
+    position: relative;
+    transition: 0.2s;
+}
+.slider-buttom::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    top: -15px;
+}
+.slider-buttom:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.current-button {
+    background-color: inherit;
+    border: 3px solid yellow;
+    width: 0px;
+    padding: 4.5px;
+    box-sizing: border-box;
+}
+p {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
