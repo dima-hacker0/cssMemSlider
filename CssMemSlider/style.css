@@ -27,8 +27,8 @@ body {
     display: flex;
 }
 .bar {
-    width: 12px;
-    height: 12px;
+    width: 1em;
+    height: 1em;
     margin: 0 8px;
     cursor: pointer;
     background-color: yellow;
@@ -101,19 +101,31 @@ input[name='r'] {
 }
 p {
     color: white;
-    font-size: 20px;
+    font-size: 1.5em;
 }
 #r1:checked ~ .flex-bottom .navigation #label-1 {
-    background-color: red;
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
 }
 #r2:checked ~ .flex-bottom .navigation #label-2 {
-    background-color: red;
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
 }
 #r3:checked ~ .flex-bottom .navigation #label-3 {
-    background-color: red;
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
 }
 #r4:checked ~ .flex-bottom .navigation #label-4 {
-    background-color: red;
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
 } 
 .padding-label {
     left: 0;
