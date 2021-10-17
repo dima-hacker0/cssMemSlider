@@ -1,0 +1,217 @@
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+.slider {
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+}
+.middle {
+    
+     
+}
+.main-bottom {
+    padding: 20px;
+}
+.navigation {
+    display: flex;
+}
+.bar {
+    width: 1em;
+    height: 1em;
+    margin: 0 8px;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.bar:hover {
+    background-color: white;
+}
+input[name='r'] {
+    opacity: 0;
+}
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 25%;
+    transition: all 0.5s ease;
+
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.mem-text {
+    display: flex;
+    overflow: hidden;
+    width: 400%;
+}
+.text-hidden {
+    width: 100%;
+    overflow: hidden;
+}
+.mem-text-child {
+    width: 25%;
+    transition: 1s;
+}
+#r1:checked~.main-bottom .slider .slides #s1 {
+    margin-left: 0%;
+}
+#r2:checked~.main-bottom .slider .slides #s1 {
+    margin-left: -25%;
+}
+#r3:checked~.main-bottom .slider .slides #s1 {
+    margin-left: -50%;
+}
+#r4:checked~.main-bottom .slider .slides #s1 {
+    margin-left: -75%;
+}
+
+#r1:checked~.flex-bottom .text-hidden .mem-text #p1 {
+    margin-left: 0%;
+}
+#r2:checked~.flex-bottom .text-hidden .mem-text #p1 {
+    margin-left: -25%;
+}
+#r3:checked~.flex-bottom .text-hidden .mem-text #p1 {
+    margin-left: -50%;
+}
+#r4:checked~.flex-bottom .text-hidden .mem-text #p1 {
+    margin-left: -75%;
+}
+.flex-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-flow: row-reverse;
+}
+p {
+    color: white;
+    font-size: 1.5em;
+}
+#r1:checked ~ .flex-bottom .navigation #label-1 {
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
+}
+#r2:checked ~ .flex-bottom .navigation #label-2 {
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
+}
+#r3:checked ~ .flex-bottom .navigation #label-3 {
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
+}
+#r4:checked ~ .flex-bottom .navigation #label-4 {
+    background-color: inherit;
+    width: 0.7em;
+    height: 0.7em;
+    border: 3px solid red;
+} 
+.padding-label {
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: translate(-9px, -8.5px);
+}
+@media(max-width: 768px) {
+    .flex-bottom {
+        display: inherit;
+    }
+    .navigation {
+        justify-content: center;
+    }
+}
+/* body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    padding: 20px;
+}
+.img-div {
+    height: 43vw;
+    width: 100%;
+    transition: 0.5s;
+    background-image: url(photos/mem1.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+main {
+    padding: 0 20px;
+    overflow: hidden;
+}
+.slider-buttom {
+    background-color: yellow;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 11px;
+    transition: 0.3s;
+    position: relative;
+    transition: 0.2s;
+}
+.slider-buttom::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    top: -15px;
+}
+.slider-buttom:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.current-button {
+    background-color: inherit;
+    border: 3px solid yellow;
+    width: 0px;
+    padding: 4.5px;
+    box-sizing: border-box;
+}
+p {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    transition: 1s;
+}
+@media(min-width: 1024px) {
+    .flex-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row-reverse;
+    }
+
+}
+@media(max-width: 500px) {
+    #text {
+        font-size: 25px;
+    }
+}  */
