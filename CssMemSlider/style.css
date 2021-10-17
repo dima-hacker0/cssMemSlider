@@ -13,7 +13,7 @@ body {
 }
 .slider {
     width: 100%;
-    height: 50vw;
+    height: 40vw;
     overflow: hidden;
 }
 .middle {
@@ -25,7 +25,6 @@ body {
 }
 .navigation {
     display: flex;
-    padding: 0 20px
 }
 .bar {
     width: 12px;
@@ -41,7 +40,6 @@ body {
 }
 input[name='r'] {
     opacity: 0;
-    position: absolute;
 }
 .slides {
     width: 400%;
@@ -68,60 +66,69 @@ input[name='r'] {
 }
 .mem-text-child {
     width: 25%;
+    transition: 1s;
 }
-#r1:checked~.s1 {
+#r1:checked~.main-bottom .slider .slides #s1 {
     margin-left: 0%;
 }
-#r2:checked~.s1 {
+#r2:checked~.main-bottom .slider .slides #s1 {
     margin-left: -25%;
 }
-#r3:checked~.s1 {
+#r3:checked~.main-bottom .slider .slides #s1 {
     margin-left: -50%;
 }
-#r4:checked~.s1 {
+#r4:checked~.main-bottom .slider .slides #s1 {
     margin-left: -75%;
 }
 
-
-
-#r1:checked~.p1 {
+#r1:checked~.flex-bottom .text-hidden .mem-text #p1 {
     margin-left: 0%;
 }
-#r2:checked~.p1 {
+#r2:checked~.flex-bottom .text-hidden .mem-text #p1 {
     margin-left: -25%;
 }
-#r3:checked~.p1 {
+#r3:checked~.flex-bottom .text-hidden .mem-text #p1 {
     margin-left: -50%;
 }
-#r4:checked~.p1 {
+#r4:checked~.flex-bottom .text-hidden .mem-text #p1 {
     margin-left: -75%;
 }
-/* input[type=radio]:checked + label {
-    background-color: red;
-} */
-
 .flex-bottom {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+    flex-flow: row-reverse;
 }
 p {
     color: white;
     font-size: 20px;
 }
-#r1:checked ~ label:nth-of-type(1) {
+#r1:checked ~ .flex-bottom .navigation #label-1 {
     background-color: red;
 }
-#r2:checked ~ label:nth-of-type(2) {
+#r2:checked ~ .flex-bottom .navigation #label-2 {
     background-color: red;
 }
-#r3:checked ~ label:nth-of-type(3) {
+#r3:checked ~ .flex-bottom .navigation #label-3 {
     background-color: red;
 }
-#r4:checked ~ label:nth-of-type(4) {
+#r4:checked ~ .flex-bottom .navigation #label-4 {
     background-color: red;
 } 
-
+.padding-label {
+    left: 0;
+    width: 30px;
+    height: 30px;
+    transform: translate(-9px, -8.5px);
+}
+@media(max-width: 768px) {
+    .flex-bottom {
+        display: inherit;
+    }
+    .navigation {
+        justify-content: center;
+    }
+}
 /* body {
     margin: 0;
     padding: 0;
